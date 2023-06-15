@@ -1,0 +1,10 @@
+INSERT INTO people (name, phone, car) VALUES ('Nathan', 1234567890, 'Toyota Corolla');
+INSERT INTO people (name, phone, car) VALUES ('Patrick', 1234567890, 'Honda Odyssey');
+INSERT INTO people (name, phone, car) VALUES ('Garrett', 1234567890, 'Smart Car');
+INSERT INTO people (name, phone, car) VALUES ('Lindsey', 1234567890, 'Ford Fiesta');
+INSERT INTO people (name, phone, car) VALUES ('Gabe', 1234567890, 'Bicycle');
+INSERT INTO people (name, phone, car) VALUES ('Bill', 1234567890, 'Box Truck');
+INSERT INTO people (name, phone, car) VALUES ('Carl', 1234567890, 'Honda civic');
+INSERT INTO people (name, phone, car) VALUES ('Kevin', 1234567890, 'Ford F250');
+INSERT INTO people (name, phone, car) VALUES ('nancy', 1234567890, 'Jeep Liberty');
+INSERT INTO people (name, phone, car) VALUES ('Jared', 1234567890, 'Kia k5');
