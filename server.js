@@ -13,10 +13,10 @@ app.use(express.static('public'));
 app.get('/people', async (req,res) =>{
     try {
     const results = await pool.query('SELECT * FROM people');
-    res.status(200).send(results.rows);
+    res.status(200).json(results.rows);
     } catch (err) {
         console.log(err.message);
-        res.status(500).send(err.message);
+        res.status(500).json(err.message);
     }
 });
 
