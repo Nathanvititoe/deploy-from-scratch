@@ -4,7 +4,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 const { Pool } = require('pg');
 const pool = new Pool ({
-    DATABASE_URL : process.env.DATABASE_URL
+    connectionString: process.env.DATABASE_URL
 });
 
 const PORT = process.env.PORT;
