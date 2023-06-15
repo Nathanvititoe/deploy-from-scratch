@@ -15,8 +15,8 @@ app.get('/people', async (req,res) =>{
     const results = await pool.query('SELECT * FROM people');
     res.status(200).json(results.rows);
     } catch (err) {
-        console.log(err.message);
-        res.status(500).json(err.message);
+        console.log(err);
+        res.status(500).json(err);
     }
 });
 
