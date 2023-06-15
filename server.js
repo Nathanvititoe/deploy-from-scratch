@@ -3,7 +3,7 @@ const app = express();
 const dotenv = require('dotenv');
 dotenv.config();
 const { Pool } = require('pg');
-const client = new Pool ({
+const pool = new Pool ({
     DATABASE_URL : process.env.DATABASE_URL
 });
 
@@ -12,7 +12,7 @@ app.use(express.static('public'));
 
 app.get('/people', async (req,res) =>{
     try {
-    const results = await client.query('SELECT * FROM people');
+    const results = await pool.query('SELECT * FROM people');
     res.status(200).send(results.rows);
     } catch (err) {
         console.log(err.message);
